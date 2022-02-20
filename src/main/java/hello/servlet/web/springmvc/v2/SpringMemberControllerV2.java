@@ -12,11 +12,11 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/springmvc/v2/members")
-public class SprintMemberControllerV2 {
+public class SpringMemberControllerV2 {
 
     private final MemberRepository memberRepository = MemberRepository.getInstance();
 
-    @RequestMapping("new-form")
+    @RequestMapping("/new-form")
     public ModelAndView newForm() {
         return new ModelAndView("new-form");
     }
